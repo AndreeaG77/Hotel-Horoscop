@@ -1,0 +1,281 @@
+@media only screen and (min-width: 992px) { 
+h1 {
+    color: black;
+    font-family: Trebuchet MS;
+    font-weight: lighter;
+    font-size: 40px;
+    background-color: sandybrown;
+    text-align: center;
+    padding-top: 25px;
+    height: 70px;
+    margin: 0;
+}
+.descriere {
+    color: black;
+    font-family: Courier New;
+    font-weight: lighter;
+    font-size: 23px;
+    background-color: sandybrown;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 125px;
+    margin: 0;
+    border-bottom: thin solid black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.buton {
+    height: 80px;
+    width: 140px;
+    font-family: arial;
+    background-color: rgb(211, 243, 190);
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    border: thin solid #74B162;
+    border-radius: 25px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(197, 224, 219);
+    width: 100%;
+    box-shadow: 5px 8px rgba(107, 238, 216, 0.849);
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dropdown-content p {
+    color: black;
+    display: block;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: rgba(107, 238, 216, 0.884)}
+.dropdown-content p:hover {background-color: rgba(107, 238, 216, 0.884)}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.rezerva {
+    margin: 10px auto;
+    font-style: italic;
+    font-family: arial;
+    border-radius: 25px;
+    width: 250px;
+    height: 90px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: animatie;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes animatie {
+    from {background-color: white;}
+    to {background-color: #364ed49a;}
+  }
+
+.rating {
+    width: 150px;
+    height: 50px;
+    font-family: arial;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-left: 25px;
+    background-color: #364ed49a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s, height 1s, font-size 1s;
+}
+
+.rating:hover {
+    width: 210px;
+    height: 70px;
+    font-size: 25px;
+}
+
+h2 {
+    margin-left: 25px;
+    font-family: arial;
+    font-size: 40px;
+}
+
+h3 {
+    margin-left: 25px;
+    font-family: arial;
+    font-size: 30px;
+    color: #364ed49a;
+}
+
+#facilitati {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.f {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.tipuri {
+    display: flex;
+    margin-left: 25px;
+}
+
+.tipuri span {
+    margin-right: 20px;
+}
+
+.tipuri span::after {
+    content: ";";
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "• ";
+    color: #364ed49a;
+}
+
+#locatie {
+    margin-left: 25px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+#locatie a {
+    font-size: 20px;
+    font-family: arial;
+}
+
+.poze {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.poza{
+  width: 100%;
+  max-height: 100%;
+}
+
+#text{
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#text1{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+form{
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+button{
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+#sterge{
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#text2{
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#info{
+    border: thick solid black;
+    text-align: center;
+    font-size: 30px;
+    width: 150px;
+    height: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -65px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: sandybrown;
+    border-top: thin solid black;
+    font-family: Trebuchet MS;
+    height: 130px;
+}
+
+.s1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.s2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.s3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 25px;
+    text-align: center;
+}
+
+}
